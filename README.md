@@ -95,15 +95,5 @@ The benchmark files provide the raw measurements used to support the paper claim
 - on-chain Ed25519 verification baseline around `2,500 ms`;
 - DID resolution latency below `100 ms` at `2,000 requests/hour` in the PoC setting.
 
-## Citation
-
-If this repository is used, cite the associated paper and reference this repository:
-
-```bibtex
-@misc{ehds_mrg_anchor_only_poc,
-  title  = {EHDS-MRG Anchor-Only PoC Reproducibility Repository},
-  author = {Evaristo Correa, Elder Bruno and Ferreira, Joao C. A. and Abelem, Antonio J. G.},
-  year   = {2025},
-  url    = {https://github.com/ehds-mrg/anchor-only-poc}
 }
 ```
