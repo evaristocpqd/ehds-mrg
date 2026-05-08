@@ -1,0 +1,98 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCommitment",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidRecordId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorizedAgent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "record_id",
+        "type": "bytes32"
+      }
+    ],
+    "name": "DuplicateRecord",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {"indexed": true, "internalType": "bytes32", "name": "record_id", "type": "bytes32"},
+      {"indexed": true, "internalType": "bytes32", "name": "subject_reference", "type": "bytes32"},
+      {"indexed": true, "internalType": "bytes32", "name": "policy_reference", "type": "bytes32"},
+      {"indexed": false, "internalType": "bytes32", "name": "commitment_hash", "type": "bytes32"},
+      {"indexed": false, "internalType": "uint8", "name": "schema_version", "type": "uint8"},
+      {"indexed": false, "internalType": "enum OrganicGovernanceRegistry.DecisionStatus", "name": "status", "type": "uint8"},
+      {"indexed": false, "internalType": "uint256", "name": "timestamp", "type": "uint256"},
+      {"indexed": false, "internalType": "address", "name": "anchored_by", "type": "address"}
+    ],
+    "name": "GovernanceAnchored",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {"indexed": true, "internalType": "address", "name": "agent", "type": "address"},
+      {"indexed": false, "internalType": "bool", "name": "authorized", "type": "bool"}
+    ],
+    "name": "AgentAuthorized",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {"internalType": "bytes32", "name": "record_id", "type": "bytes32"},
+      {"internalType": "bytes32", "name": "subject_reference", "type": "bytes32"},
+      {"internalType": "bytes32", "name": "policy_reference", "type": "bytes32"},
+      {"internalType": "bytes32", "name": "commitment_hash", "type": "bytes32"},
+      {"internalType": "uint8", "name": "schema_version", "type": "uint8"},
+      {"internalType": "enum OrganicGovernanceRegistry.DecisionStatus", "name": "status", "type": "uint8"}
+    ],
+    "name": "anchorGovernanceDecision",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{"internalType": "bytes32", "name": "record_id", "type": "bytes32"}],
+    "name": "getRecord",
+    "outputs": [
+      {
+        "components": [
+          {"internalType": "bytes32", "name": "record_id", "type": "bytes32"},
+          {"internalType": "bytes32", "name": "subject_reference", "type": "bytes32"},
+          {"internalType": "bytes32", "name": "policy_reference", "type": "bytes32"},
+          {"internalType": "bytes32", "name": "commitment_hash", "type": "bytes32"},
+          {"internalType": "uint8", "name": "schema_version", "type": "uint8"},
+          {"internalType": "enum OrganicGovernanceRegistry.DecisionStatus", "name": "status", "type": "uint8"},
+          {"internalType": "uint256", "name": "timestamp", "type": "uint256"}
+        ],
+        "internalType": "struct OrganicGovernanceRegistry.GovernanceRecord",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
