@@ -1,0 +1,20 @@
+[
+  {
+    "purpose": "primary-care",
+    "jurisdiction_from": "PT",
+    "jurisdiction_to": "ES",
+    "subject_reference": "sha256(did:example:health-professional:pt)",
+    "policy_reference": "sha256(policy:ehds:primary-care:v1)",
+    "schema_version": 1,
+    "status": "Approved"
+  },
+  {
+    "purpose": "secondary-use-research",
+    "jurisdiction_from": "NO",
+    "jurisdiction_to": "PT",
+    "subject_reference": "sha256(did:example:researcher:no)",
+    "policy_reference": "sha256(policy:ehds:secondary-use:v1)",
+    "schema_version": 1,
+    "status": "Approved"
+  }
+]

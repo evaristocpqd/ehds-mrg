@@ -1,0 +1,4 @@
+run,network,nodes,consensus,contract,function,gas_used,notes
+1,besu-local,8,IBFT2,OrganicGovernanceRegistry,anchorGovernanceDecision,64960,paper reported value
+2,besu-local,8,IBFT2,OrganicGovernanceRegistry,anchorGovernanceDecision,64960,duplicate-free synthetic input
+3,besu-local,8,IBFT2,OrganicGovernanceRegistry,anchorGovernanceDecision,64960,constant O(1) anchoring path

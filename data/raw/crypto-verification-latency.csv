@@ -1,0 +1,5 @@
+mode,operation,run,mean_ms,stddev_ms,notes
+on-chain,Ed25519 verification baseline,1,2500,150,EVM Solidity-level baseline
+on-chain,Ed25519 verification baseline,2,2492,147,EVM Solidity-level baseline
+off-chain,Ed25519 verification,1,2.5,0.4,agent-layer verification
+off-chain,Ed25519 verification,2,2.6,0.4,agent-layer verification

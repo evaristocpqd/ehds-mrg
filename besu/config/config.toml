@@ -1,0 +1,17 @@
+# Hyperledger Besu configuration for the EHDS-MRG anchor-only PoC.
+# Adjust paths and key material for each node before production use.
+
+data-path="data"
+network-id=1337
+sync-mode="FULL"
+grpc-enabled=false
+rpc-http-enabled=true
+rpc-http-host="0.0.0.0"
+rpc-http-port=8545
+rpc-http-cors-origins=["*"]
+rpc-http-api=["ETH","NET","WEB3","IBFT","ADMIN","TXPOOL"]
+host-allowlist=["*"]
+miner-enabled=false
+logging="INFO"
+
+# Berlin-compatible execution configuration is defined in genesis.json.

@@ -1,0 +1,4 @@
+architecture,on_chain_payload_bytes,record_bytes,reduction_percent,notes
+ledger-centric OIDC4VP payload,2560,,0,baseline dynamic payload
+anchor-only GovernanceRecord,,160,93.75,fixed-size on-chain footprint
+anchor-only commitment hash,32,,98.75,commitment component only
